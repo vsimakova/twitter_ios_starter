@@ -14,9 +14,10 @@ class TweetsCellTableViewCell: UITableViewCell {
     @IBOutlet weak var userNameLabel: UILabel!
     @IBOutlet weak var tweetContent: UILabel!
     
-    @IBOutlet weak var retweetButton: UIButton!
-
+    
     @IBOutlet weak var favButton: UIButton!
+    @IBOutlet weak var retweetButton: UIButton!
+    
     
     @IBAction func favoriteTweet(_ sender: Any) {
         let tobeFavorited = !favorited
@@ -34,6 +35,7 @@ class TweetsCellTableViewCell: UITableViewCell {
             })
         }
     }
+    
     
     @IBAction func retweet(_ sender: Any) {
     }
